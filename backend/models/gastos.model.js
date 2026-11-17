@@ -1,12 +1,16 @@
 const database = require("../db/conexion_db")
-console.log(database)
+
+class GastosModel{
+
+    static async obtenerGastos(){
+
+        const [resultadoDatos] = await database.query(" SELECT * FROM registros")
+       console.log(resultadoDatos)
+       return resultadoDatos
+    }
 
 
 
-
-const obtenerDatos = async () => {
-    const resultadoDatos = await database.query(" SELECT * FROM categorias")
-    console.log(resultadoDatos)
 }
 
-obtenerDatos()
+module.exports = GastosModel
