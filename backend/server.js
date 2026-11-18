@@ -1,8 +1,8 @@
 const express = require("express")
 const router = require("./routes/router")
 const app = express()
-let port = 4000
-
+let port = 4000|
+app.use(express.json())
 app.use("/api",router)
 
 app.listen(port, ()=>{

@@ -13,4 +13,6 @@ class GastosModel{
 
 }
 
+
+
 module.exports = GastosModel
