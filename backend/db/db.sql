@@ -45,4 +45,7 @@ SELECT
     categorias.nombre AS categoria
 FROM registros
 INNER JOIN categorias
-ON registros.id_categoria = categorias.id_categoria;
+ON registros.id_categoria = categorias.id_categoria;    
+
+
+select * FROM categorias cat inner join  registros  reg on cat.id_categoria = reg.id_categoria;

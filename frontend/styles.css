@@ -91,7 +91,7 @@ hr {
 }
 
 
-.registro {
+#registro {
     display: flex;
     align-items: center;
     justify-content: space-between;
